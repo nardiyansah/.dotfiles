@@ -11,3 +11,5 @@ ln -s <destination of original file> <destination of link file>
 4. Check everything is work using `:checkhealth`
 5. Use nerd font for icons.
 
+# Vim
+use Vundle as plugin manager. Install plugin using `:PluginInstall`
