@@ -3,6 +3,9 @@ imap jj <Esc>
 set number
 set nocompatible              " be iMproved, required
 filetype off                  " required
+set tabstop=4      " Number of visual spaces per TAB
+set shiftwidth=4   " Number of spaces to use for autoindenting
+set expandtab      " Use spaces instead of tabs
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -13,7 +16,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'fatih/vim-go'
-
+Plugin 'jiangmiao/auto-pairs'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -28,3 +31,7 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+"
+" setting for vim-go
+let g:go_code_completion_enabled = 1
+
